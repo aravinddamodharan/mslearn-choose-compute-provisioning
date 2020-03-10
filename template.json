@@ -50,12 +50,13 @@
                 "description": "Admin password"
             }
         },
-        "modulesUrl": {
-            "type": "string",
-            "metadata": {
-                "description": "URL for the DSC configuration module."
-            }
-        },
+"modulesUrl": {
+    "type": "string",
+    "defaultValue": "https://github.com/MicrosoftDocs/mslearn-choose-compute-provisioning/raw/master/Webserver.zip",
+    "metadata": {
+        "description": "URL for the DSC configuration module."
+    }
+},
         "configurationFunction": {
             "type": "string",
             "defaultValue": "Webserver.ps1\\Webserver",
